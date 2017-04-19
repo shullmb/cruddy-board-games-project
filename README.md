@@ -89,7 +89,8 @@ Suggested order of operations:
 
 ## BONUS
 
-Replace synchronous I/O functions with asynchronous. (fs.readFile instead of fs.readFileSync)
+* Replace synchronous I/O functions with asynchronous. (fs.readFile instead of fs.readFileSync)
+* Use a database instead of `games.json`
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
