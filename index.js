@@ -28,11 +28,11 @@ app.get('/', function(req, res) {
 // | GET | /games | index | display a list of all games |
 
 app.get('/', function(req, res) {
-  // will error out, navigate to your /games route and read the error. What is missing in your views directory?
-  res.render('games'); 
+  // this will error out, navigate to your /games route and read the error. What is missing in your views directory?
+  res.render('games');
 });
 
-// | GET | /games/new | new | return an HTML fom for creatign a new game |
+// | GET | /games/new | new | return an HTML form for creating a new game |
 
 // | POST | /games | create | create a new game (using form data from /games/new) |
 
