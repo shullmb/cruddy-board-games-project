@@ -21,6 +21,31 @@ app.set('view engine', 'ejs');
 
 // ...
 
+app.get('/', function(req, res) {
+  res.render('home');
+});
+
+// | GET | /games | index | display a list of all games |
+
+app.get('/', function(req, res) {
+  // will error out, navigate to your /games route and read the error. What is missing in your views directory?
+  res.render('games'); 
+});
+
+// | GET | /games/new | new | return an HTML fom for creatign a new game |
+
+// | POST | /games | create | create a new game (using form data from /games/new) |
+
+// | GET | /games/:name | show | display a specific game |
+
+// | GET | /games/:name/edit | edit | return an HTML form for editing a game |
+
+// | PUT | /games/:name | update | update a specific game (using form data from /games/:name/edit) |
+
+// | DELETE | /games/:name | destroy | deletes a specific game |
+
+// ...
+
 // helper functions
 
 // Read list of games from file.
@@ -34,6 +59,8 @@ function getGames() {
 function saveGames(games) {
     fs.writeFileSync('./games.json', JSON.stringify(games));
 }
+
+// remove null values from JSON function?
 
 // start the server
 

@@ -32,67 +32,21 @@ Suggested order of operations:
 
 ## Full RESTful Routing
 
-<table>
-<thead>
-<tr>
-<th>Verb</th>
-<th>Path</th>
-<th>Action</th>
-<th>Used for</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td>/games</td>
-<td>index</td>
-<td>display a list of all games</td>
-</tr>
-<tr>
-<td>GET</td>
-<td>/games/new</td>
-<td>new</td>
-<td>return an HTML form for creating a new game</td>
-</tr>
-<tr>
-<td>POST</td>
-<td>/games</td>
-<td>create</td>
-<td>create a new game (using form data from /games/new)</td>
-</tr>
-<tr>
-<td>GET</td>
-<td>/games/:name</td>
-<td>show</td>
-<td>display a specific game</td>
-</tr>
-<tr>
-<td>GET</td>
-<td>/games/:name/edit</td>
-<td>edit</td>
-<td>return an HTML form for editing a game</td>
-</tr>
-<tr>
-<td>PUT</td>
-<td>/games/:name</td>
-<td>update</td>
-<td>update a specific game (using form data from /games/:name/edit)</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td>/games/:name</td>
-<td>destroy</td>
-<td>deletes a specific game</td>
-</tr>
-</tbody>
-</table>
+| Verb | Path | Action | Used for |
+| GET | /games | index | display a list of all games |
+| GET | /games/new | new | return an HTML fom for creatign a new game |
+| POST | /games | create | create a new game (using form data from /games/new) |
+| GET | /games/:name | show | display a specific game |
+| GET | /games/:name/edit | edit | return an HTML form for editing a game |
+| PUT | /games/:name | update | update a specific game (using form data from /games/:name/edit) |
+| DELETE | /games/:name | destroy | deletes a specific game |
 
 ## BONUS
 
+* Use gamesWithNull.json instead of games.json. How will you make sure you're using an object instead of a null value?
 * Replace synchronous I/O functions with asynchronous. (fs.readFile instead of fs.readFileSync)
 * Use a database instead of `games.json`
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
 All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
-
