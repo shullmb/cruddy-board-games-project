@@ -17,18 +17,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 app.set('view engine', 'ejs');
 
-// your routes here
-
-// ...
-
-app.get('/', function(req, res) {
-  res.render('home');
-});
+// Routes begin here
 
 // | GET | /games | index | display a list of all games |
-
 app.get('/', function(req, res) {
-  // this will error out, navigate to your /games route and read the error. What is missing in your views directory?
+  // this will error out, navigate to your /games route and read the error.
+  // What is missing in your views directory?
   res.render('games');
 });
 
@@ -44,7 +38,6 @@ app.get('/', function(req, res) {
 
 // | DELETE | /games/:name | destroy | deletes a specific game |
 
-// ...
 
 // helper functions
 
@@ -63,7 +56,6 @@ function saveGames(games) {
 // remove null values from JSON function?
 
 // start the server
-
 var port = 3000;
 console.log("http://localhost:" + port);
 app.listen(port);
