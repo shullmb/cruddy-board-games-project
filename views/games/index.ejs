@@ -1,0 +1,15 @@
+
+<div>
+    <h1>My Board Games</h1>
+</div>
+<div>
+    <ul>
+        <% games.forEach( function(game, i) { %>
+            <li>
+            <a href="/games/<%= i %>/edit">edit </a>
+            <a class="delete" href="/games/<%= i %>">delete </a>
+            <a href="/games/<%= i %>"><%= game.name %></a>
+            </li>
+        <% }) %>
+    </ul>
+</div>

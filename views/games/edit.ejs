@@ -1,0 +1,7 @@
+<div>
+    <form id="edit" action="/games/<%= id %>" method="POST">
+        <input type="text" name="name" value="<%= game.name %>"><br>
+        <input type="text" name="description" value="<%= game.description %>"><br>
+        <input type="submit" value="Edit the game">    
+    </form>
+</div>
